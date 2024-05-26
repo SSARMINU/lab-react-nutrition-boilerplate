@@ -1,19 +1,104 @@
 /* src/App.css */
+
 .container {
   margin-top: 20px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.added-item {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 10px;
-  padding: 10px;
-  border: 1px solid #ddd;
+.field {
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  padding: 16px; /* Increase padding for larger size */
   border-radius: 5px;
-  background-color: black;
+  border: 1px solid #ddd;
+  font-size: 1.2rem; /* Increase font size for better visibility */
 }
 
-.added-item button {
-  margin-left: 10px;
+.button {
+  border-radius: 5px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.media {
+  display: flex;
+  align-items: center;
+}
+
+.media-left {
+  margin-right: 20px;
+}
+
+.media-left .image {
+  width: 64px; /* Adjust the width of the image container */
+  height: 64px; /* Adjust the height of the image container */
+}
+
+.media-left .image img {
+  width: 100%; /* Ensure the image takes the full width of the container */
+  height: 100%; /* Ensure the image takes the full height of the container */
+  border-radius: 8px;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.media-content {
+  flex: 1;
+}
+
+.media-content .content {
+  display: flex;
+  align-items: center;
+}
+
+.media-content p {
+  margin: 0;
+  color: black; /* Set text color to black */
+}
+
+.field.has-addons {
+  display: flex;
+  align-items: center;
+}
+
+.field.has-addons .control {
+  margin-left: 5px;
+}
+
+.field.has-addons .control:first-child {
+  margin-left: 0;
+}
+
+.input {
+  width: 60px;
+  text-align: center;
+  color: white; /* Set input text color to black */
+}
+
+.button.is-info {
+  background-color: #209cee;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button.is-info:hover {
+  background-color: #1085d8;
+}
+
+.box p {
+  color: black; /* Set text color to black */
 }
